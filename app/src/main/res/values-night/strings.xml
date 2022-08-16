@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apilink" />
+    <string name="pacotespermitidos">com.whatsapp.w4b</string>
+    <string name="permitido_responder">O aplicativo não está permitido a responder suas notificações.</string>
+</resources>

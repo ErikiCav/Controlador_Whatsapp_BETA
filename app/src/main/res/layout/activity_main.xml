@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextApiLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="408dp"
+        android:ems="199"
+        android:hint="Informe o link de sua api."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:onClick="gerenciamentoApiLink"
+        android:text="@string/apilink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPacotesPermitidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoPermitirUsoNotificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="354dp"
+        android:onClick="botaoAtalhoPermissaoNotificaticacao"
+        android:text="CLIQUE AQUI PARA PERMITIR O ACESSO À NOTIFICAÇÕES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextApiLink"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPacotesPermitidos"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginBottom="732dp"
+        android:ems="199"
+        android:hint="Informe o pacote de aplicativos permitidos."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:onClick="gerenciamentoPacotes"
+        android:text="@string/pacotespermitidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/pacotespermitidos" />
+
+    <Button
+        android:id="@+id/permitirResponder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="281dp"
+        android:onClick="gerenciamentoPermissaoResponder"
+        android:text="@string/permitido_responder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoPermitirUsoNotificacao"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

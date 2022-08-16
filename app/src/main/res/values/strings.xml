@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Controlador Whatsapp BETA</string>
+    <string name="apilink" translatable="false" />
+    <string name="pacotespermitidos" translatable="false" />
+    <string name="permitido_responder" translatable="false">Mudar estado de permissão para responder</string>
+</resources>

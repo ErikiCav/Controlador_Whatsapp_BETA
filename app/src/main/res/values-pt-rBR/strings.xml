@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Controlador Whatsapp BETA</string>
+    <string name="clique_aqui_para_permitir_o_acesso_notifica_es">CLIQUE AQUI PARA PERMITIR O ACESSO À NOTIFICAÇÕES</string>
+    <string name="informe_o_link_de_sua_api">Informe o link de sua api.</string>
+    <string name="informe_o_pacote_de_aplicativos_permitidos">Informe o pacote de aplicativos permitidos.</string>
 </resources>

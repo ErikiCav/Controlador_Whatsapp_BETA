@@ -3,4 +3,7 @@
     <string name="apilink" />
     <string name="pacotespermitidos">com.whatsapp.w4b</string>
     <string name="permitido_responder">O aplicativo não está permitido a responder suas notificações.</string>
+    <string name="clique_aqui_para_permitir_o_acesso_notifica_es">CLIQUE AQUI PARA PERMITIR O ACESSO À NOTIFICAÇÕES</string>
+    <string name="informe_o_link_de_sua_api">Informe o link de sua api.</string>
+    <string name="informe_o_pacote_de_aplicativos_permitidos">Informe o pacote de aplicativos permitidos.</string>
 </resources>

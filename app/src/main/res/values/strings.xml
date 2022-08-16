@@ -3,4 +3,7 @@
     <string name="apilink" translatable="false" />
     <string name="pacotespermitidos" translatable="false" />
     <string name="permitido_responder" translatable="false">Mudar estado de permissão para responder</string>
+    <string name="clique_aqui_para_permitir_o_acesso_notifica_es">CLIQUE AQUI PARA PERMITIR O ACESSO À NOTIFICAÇÕES</string>
+    <string name="informe_o_link_de_sua_api">Informe o link de sua api.</string>
+    <string name="informe_o_pacote_de_aplicativos_permitidos">Informe o pacote de aplicativos permitidos.</string>
 </resources>

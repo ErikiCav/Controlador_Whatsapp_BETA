@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         exibirApiLink.setText(preferenciasCompartilhadas.getString("api_link", ""));
         exibirPacotes.setText(preferenciasCompartilhadas.getString("pacotes_permitidos",""));
 
-        if(preferenciasCompartilhadas.getString("permitidoResponder","").equals("não")){
+        if(preferenciasCompartilhadas.getString("permitidoResponder","").contains("não")){
             permissaoResponderBoolean.setActivated(false);
         }else{
             permissaoResponderBoolean.setActivated(true);

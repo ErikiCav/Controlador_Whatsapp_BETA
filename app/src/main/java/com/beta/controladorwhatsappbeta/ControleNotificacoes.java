@@ -15,7 +15,7 @@ public class ControleNotificacoes extends NotificationListenerService {
     @Override
     public void onNotificationPosted (StatusBarNotification sbn) {
         super.onNotificationPosted(sbn);
-        if(!mensagemRepetida(sbn) && pacotePermitido(sbn)){
+        if(!mensagemRepetida(sbn) && pacotePermitido(sbn) && permitidoResponder(sbn)){
             try {
                 responderNotificacao(sbn);
             } catch (PendingIntent.CanceledException e) {
@@ -75,5 +75,14 @@ public class ControleNotificacoes extends NotificationListenerService {
     //Checa se a notificação está repetida.
     private Boolean mensagemRepetida(StatusBarNotification sbn){
         return sbn.getKey().split("\\|")[3].toLowerCase().equals("null");
+    }
+
+    //Checa se bot pode responder as mensagens.
+    private Boolean permitidoResponder(StatusBarNotification sbn){
+        if(getSharedPreferences("dados_salvos", MODE_PRIVATE).getString("permitidoResponder", "").contains("não")){
+            return false;
+        }else{
+            return true;
+        }
     }
 }

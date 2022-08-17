@@ -77,7 +77,7 @@ public class ControleNotificacoes extends NotificationListenerService {
         return sbn.getKey().split("\\|")[3].toLowerCase().equals("null");
     }
 
-    //Checa se bot pode responder as mensagens.
+    //Checa se o bot pode responder as mensagens.
     private Boolean permitidoResponder(StatusBarNotification sbn){
         if(getSharedPreferences("dados_salvos", MODE_PRIVATE).getString("permitidoResponder", "").contains("não")){
             return false;
